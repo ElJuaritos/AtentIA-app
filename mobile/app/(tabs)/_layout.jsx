@@ -6,6 +6,7 @@ import {
   BarChart3,
   BookOpen,
   Home,
+  Lightbulb,
   Shield,
   User,
 } from 'lucide-react-native';
@@ -17,6 +18,7 @@ const TAB_ICONS = {
   biblioteca: BookOpen,
   reportes: BarChart3,
   control: Shield,
+  guia: Lightbulb,
   perfil: User,
 };
 
@@ -51,6 +53,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="control"
         options={{ title: 'Control', tabBarIcon: makeIcon('control') }}
+      />
+      <Tabs.Screen
+        name="guia"
+        options={{ title: 'Guía', tabBarIcon: makeIcon('guia') }}
       />
       <Tabs.Screen
         name="perfil"
